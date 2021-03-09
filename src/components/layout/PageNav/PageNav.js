@@ -1,45 +1,46 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styles from './PageNav.module.scss';
+import Button from '@material-ui/core/Button';
 
 const PageNav = () => (
   <nav>
-    <NavLink
+    <Button component={NavLink}
       className={styles.navLink}
       exact
       to={`${process.env.PUBLIC_URL}/`}
       activeClassName="active"
     >
       home
-    </NavLink>
-    <NavLink
-      className={styles.navLink}
+    </Button>
+    <Button component={NavLink}
+      className={styles.navLink} 
       to={`${process.env.PUBLIC_URL}/login`}
       activeClassName="active"
     >
       login
-    </NavLink>
-    <NavLink
+    </Button>
+    <Button component={NavLink}
       className={styles.navLink}
       to={`${process.env.PUBLIC_URL}/kitchen`}
       activeClassName="active"
     >
       kitchen
-    </NavLink>
-    <NavLink
+    </Button>
+    <Button component={NavLink}
       className={styles.navLink}
       to={`${process.env.PUBLIC_URL}/tables`}
       activeClassName="active"
     >
       tables
-    </NavLink>
-    <NavLink
+    </Button>
+    <Button component={NavLink}
       className={styles.navLink}
       to={`${process.env.PUBLIC_URL}/waiter`}
       activeClassName="active"
     >
       waiter
-    </NavLink>
+    </Button>
   </nav>
 );
 
