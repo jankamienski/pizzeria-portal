@@ -4,7 +4,7 @@ import styles from './PageNav.module.scss';
 import Button from '@material-ui/core/Button';
 
 const PageNav = () => (
-  <nav>
+  <nav className={styles.component}>
     <Button component={NavLink}
       className={styles.navLink}
       exact

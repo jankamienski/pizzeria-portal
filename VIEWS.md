@@ -1,15 +1,15 @@
 # Dashboard
 
 - `/`
-  - statystyki dzisiejszych zamówień (zdalne i lokalne)
-  - lista rezerwacji i eventów zaplanowanych na dzisiaj
+  - statystyki dzisiejszych zamówień (zdalne i lokalne) - tabela
+  - lista rezerwacji i eventów zaplanowanych na dzisiaj - tabela
   
 
 # Logowanie
 
 - `/login`
-  - pola na login i hasło
-  guzik do zalogowania (link do dashboardu)
+  - pola na login i hasło  - formularz
+  guzik do zalogowania (link do dashboardu)  - button
 
 # Widok ostępności stolików
 
@@ -34,7 +34,7 @@
 
 
 `/tables/events/new`
-  - analogicznie do poprzedniej, dla eventó,  bez poczatkowych informacji
+  - analogicznie do poprzedniej, dla eventów,  bez poczatkowych informacji
 
 # Widok kelnera
 
@@ -43,7 +43,7 @@
   - w kolumnach rozne rodzaje informacji (status, czas od ostatniej aktywnosci)
   - w ostatniej kolumnie dostepne akcje dla danego stolika
 - `/waiter/order/new`
-  - numer stooika (edytowalny)
+  - numer stolika (edytowalny)
   - menu produktow
   - opcje wybranego produktu
   - zamowienia (zamowione produktu z opcjami i cena)
