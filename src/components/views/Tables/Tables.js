@@ -24,6 +24,11 @@ const useStyles = makeStyles((theme) => ({
     marginRight: theme.spacing(1),
     width: 200,
   },
+  root: {
+    color: 'red',
+    background: 'yellow',
+    fontsize: '49px',
+  },
 }));
 
 const demoContent = [
@@ -65,7 +70,10 @@ const Tables = props => {
           className={classes.textField}
           InputLabelProps={{
             shrink: true,
-          }}           //jak zmienic kolor tekstu np w kalendarzu? Jak zmienic wielksoc tekstu? ODstepy? Jak zrobic aby w kazdym wierszu suwak dzialal odzielnie?
+          }} 
+          classes={{
+            root: classes.root,
+          }}     //jak zmienic kolor tekstu np w kalendarzu? Jak zmienic wielksoc tekstu? ODstepy? Jak zrobic aby w kazdym wierszu suwak dzialal odzielnie?
         />
       </form>
 

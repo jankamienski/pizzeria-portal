@@ -51,14 +51,7 @@ const useStyles = makeStyles((theme) => ({
 
 
 const Kitchen = () => {
-  const classes = useStyles();
-  const [state, setState] = React.useState({
-    checkedA: true,
-    checkedB: true,
-  });
-  const handleChange = (event) => {
-    setState({ ...state, [event.target.name]: event.target.checked });
-  };
+ 
 
   return (
     <div className={styles.component}>
@@ -98,10 +91,7 @@ const Kitchen = () => {
                   {renderActions(row.status)}
                 </TableCell>
                 <TableCell>
-                  <Switch
-                    checked={state.checkedA}
-                    onChange={handleChange}
-                    name="checkedA"
+                  <Switch  
                     inputProps={{ 'aria-label': 'secondary checkbox' }}
                   />
                 </TableCell>
