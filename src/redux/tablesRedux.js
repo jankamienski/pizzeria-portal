@@ -85,16 +85,13 @@ export default function reducer(statePart = [], action = {}) {
       };
     }
     case CHANGE_TABLE_STATUS: {
-      const newState = statePart.data.map((table) => {
-        if (table.id === clickedtable.id) {
-          table.status = newState;
-        }
-      });
-
       return {
-
         ...statePart,
-
+        loading: {
+          active: false,
+          error: action.payload,
+        },
+        data: statePart.data.map (order => order.id === action.id ? {...order, status: action.status } : order ),
       };
     }
     default:
